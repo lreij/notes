@@ -1,3 +1,0 @@
-ebooklib==0.18
-charset-normalizer==3.3.2
-markdown==3.6
