@@ -1,1 +1,2 @@
 https://bitbucket.org/doggygo/url
+https://github.com/Astro-Han/karpathy-llm-wiki
