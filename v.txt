@@ -4,3 +4,4 @@ https://github.com/tt-a1i/archify
 https://github.com/MetcalfSolutions/Satori
 https://github.com/glebis/groundwork
 https://github.com/ataglianetti/inner-dialogue
+https://github.com/tjboudreaux/cc-thinking-skills
