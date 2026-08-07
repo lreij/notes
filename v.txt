@@ -2,3 +2,4 @@ https://github.com/firecrawl/firecrawl
 https://github.com/firecrawl/anydoc
 https://github.com/tt-a1i/archify
 https://github.com/MetcalfSolutions/Satori
+https://github.com/glebis/groundwork
