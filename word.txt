@@ -1,0 +1,20 @@
+parametric /ˌpærəˈmetrɪk/ adj. 参数的；参量的；由参数决定的（如：parametric design 参数化设计；parametric equation 参数方程）
+proximal /ˈprɒksɪməl/ adj. 近侧的；近端的；接近（中心或原点）的（解剖学中常与 distal「远端的」相对；如：proximal end 近端）
+recipient /rɪˈsɪpiənt/ n. 接受者；收件人（如：the recipient of an award 获奖者；recipient's address 收件人地址）
+tangible /ˈtændʒəbl/ adj. 可触摸的；实体的；确实的（常与 intangible「无形的」相对；如：tangible assets 有形资产；tangible benefits 实实在在的好处）
+devise /dɪˈvaɪz/ v. 设计；发明；策划（指想出计划、方法或装置；如：devise a plan 制定计划；devise a strategy 设计策略）
+redact /rɪˈdækt/ v. 编辑（尤指为发布而删改文本）；（尤指出于保密考虑）删改、涂黑（如：redact sensitive information 删改敏感信息；a redacted document 经过删改的文件）
+ubiquitous /juːˈbɪkwɪtəs/ adj. 无处不在的；普遍存在的（如：ubiquitous smartphones 随处可见的智能手机）
+relentlessly /rɪˈlentləsli/ adv. 不停地；不屈不挠地；无情地（如：work relentlessly 不懈努力；pursue relentlessly 不懈追求）
+benevolent /bɪˈnevələnt/ adj. 仁慈的；善意的；慈善的（如：a benevolent smile 慈祥的微笑；benevolent organization 慈善机构）
+tenacity /təˈnæsəti/ n. 坚韧；坚持不懈；顽强（如：show great tenacity 展现出极大的韧性；tenacity of purpose 目标的坚定性）
+sediment /ˈsedɪmənt/ n. 沉淀物；沉积物（如：sediment at the bottom of a river 河底的沉积物；sedimentary rock 沉积岩）
+seam /siːm/ n. 接缝；缝合线；(地质)矿层，煤层；v. 缝合，接合（如：a seam in a garment 衣服上的缝线；a coal seam 煤层；burst at the seams 挤得快要爆开）
+tautological /ˌtɔːtəˈlɒdʒɪkəl/ adj. 同义重复的；累赘的（指用不同的词重复表达同一意思，逻辑或修辞上多余；如：a tautological statement 同义重复的陈述；avoid tautological phrasing 避免措辞累赘）
+deepen /ˈdiːpən/ v. 加深；深化；使更强烈（如：deepen understanding 加深理解；deepen a relationship 深化关系）
+justify /ˈdʒʌstɪfaɪ/ v. 证明…是正当的；为…辩护；调整（文本）使两端齐行（如：justify an action 证明某行为合理；justify a decision 为决定辩护）
+indirection /ˌɪndɪˈrekʃn/ n. 迂回；间接（性）；（计算机）间接寻址/间接引用（如：a level of indirection 一层间接性；pointer indirection 指针间接引用）
+impeccable /ɪmˈpekəbl/ adj. 无瑕的；完美的；无可指责的（指行为、品质或表现毫无缺点；如：impeccable taste 无可挑剔的品味；impeccable manners 无可指责的举止）
+paradigm /ˈpærədaɪm/ n. 范式；典范；模式（指一种典型的思维模式或理论框架；如：a paradigm shift 范式转变；the dominant paradigm 主流范式）
+caveat /ˈkæviæt/ n. 警告；附加说明；限制性条款（指提醒对方需注意的前提或例外情况；如：with a caveat 附带一个警告/说明；a caveat to that statement 该陈述的一个附加说明）
+teleportation /ˌtelɪpɔːˈteɪʃn/ n. 心灵传物；(尤指科幻中的)瞬间传送（指人或物体瞬间从一处转移到另一处；如：teleportation device 传送装置）
