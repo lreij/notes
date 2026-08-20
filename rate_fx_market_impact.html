@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>利率 · 汇率如何影响股市 / 债市 / 黄金</title>
+<style>
+  :root{
+    --bg:#0b0f1a;
+    --panel:#121826;
+    --panel2:#161f33;
+    --border:#243049;
+    --text:#e6ebf5;
+    --sub:#8a96b3;
+    --up:#ff5c5c;
+    --down:#3ddc97;
+    --accent:#5b8cff;
+    --gold:#f4c542;
+    --stock:#5b8cff;
+    --bond:#a679ff;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:radial-gradient(circle at 20% -10%, #17203a 0%, var(--bg) 55%);
+    color:var(--text);
+    font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+    padding:32px 20px 60px;
+  }
+  .wrap{max-width:1160px;margin:0 auto;}
+  header{text-align:center;margin-bottom:28px;}
+  header h1{font-size:26px;margin:0 0 8px;letter-spacing:.5px;}
+  header p{color:var(--sub);font-size:14px;margin:0;}
+
+  .controls{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:24px 28px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+    margin-bottom:22px;
+  }
+  @media(max-width:760px){.controls{grid-template-columns:1fr;}}
+
+  .control-item label{
+    display:flex;justify-content:space-between;align-items:baseline;
+    font-size:14px;color:var(--sub);margin-bottom:10px;
+  }
+  .control-item .val{font-size:20px;font-weight:700;color:var(--text);}
+  .control-item .val.pos{color:var(--up);}
+  .control-item .val.neg{color:var(--down);}
+
+  input[type=range]{
+    width:100%;height:6px;border-radius:3px;
+    background:linear-gradient(to right, var(--down), var(--border) 50%, var(--up));
+    outline:none;-webkit-appearance:none;cursor:pointer;
+  }
+  input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance:none;width:20px;height:20px;border-radius:50%;
+    background:#fff;border:3px solid var(--accent);cursor:pointer;
+    box-shadow:0 0 0 4px rgba(91,140,255,.15);
+  }
+  .scale-labels{display:flex;justify-content:space-between;font-size:11px;color:var(--sub);margin-top:6px;}
+
+  .presets{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;}
+  .presets button{
+    background:var(--panel2);border:1px solid var(--border);color:var(--text);
+    font-size:12px;padding:7px 12px;border-radius:20px;cursor:pointer;
+    transition:.2s;
+  }
+  .presets button:hover{background:var(--accent);border-color:var(--accent);}
+
+  .cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-bottom:24px;}
+  @media(max-width:900px){.cards{grid-template-columns:1fr;}}
+
+  .card{
+    background:var(--panel);border:1px solid var(--border);border-radius:16px;
+    padding:22px;position:relative;overflow:hidden;
+    transition:transform .3s;
+  }
+  .card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;
+  }
+  .card.stock::before{background:var(--stock);}
+  .card.bond::before{background:var(--bond);}
+  .card.gold::before{background:var(--gold);}
+
+  .card h2{font-size:16px;margin:0 0 4px;display:flex;align-items:center;gap:8px;}
+  .card .icon{font-size:20px;}
+  .card .desc{font-size:12px;color:var(--sub);margin-bottom:16px;}
+
+  .gauge{
+    display:flex;align-items:center;gap:14px;margin-bottom:14px;
+  }
+  .arrow{
+    font-size:30px;transition:transform .35s, color .35s;
+    display:inline-block;
+  }
+  .arrow.up{color:var(--up);transform:rotate(0deg);}
+  .arrow.down{color:var(--down);transform:rotate(0deg);}
+  .magnitude{
+    font-size:22px;font-weight:700;
+  }
+  .magnitude.up{color:var(--up);}
+  .magnitude.down{color:var(--down);}
+
+  .bar-track{height:10px;border-radius:5px;background:var(--panel2);overflow:hidden;position:relative;margin-bottom:16px;}
+  .bar-fill{
+    position:absolute;top:0;bottom:0;left:50%;
+    transition:width .35s, background .35s, left .35s;
+    border-radius:5px;
+  }
+
+  .logic{
+    font-size:12.5px;color:var(--sub);line-height:1.7;
+    border-top:1px dashed var(--border);padding-top:12px;
+  }
+  .logic b{color:var(--text);}
+  .logic .chain{
+    display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin-bottom:8px;
+    font-size:12px;
+  }
+  .chain span{
+    background:var(--panel2);padding:3px 8px;border-radius:6px;color:var(--text);
+    white-space:nowrap;
+  }
+  .chain .op{color:var(--sub);}
+
+  .legend{
+    display:flex;justify-content:center;gap:24px;font-size:12px;color:var(--sub);
+    margin-bottom:30px;flex-wrap:wrap;
+  }
+  .legend span{display:flex;align-items:center;gap:6px;}
+  .dot{width:10px;height:10px;border-radius:50%;display:inline-block;}
+
+  .explain{
+    background:var(--panel);border:1px solid var(--border);border-radius:16px;
+    padding:26px 28px;
+  }
+  .explain h3{margin-top:0;font-size:16px;}
+  .explain .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:16px;}
+  @media(max-width:900px){.explain .grid3{grid-template-columns:1fr;}}
+  .explain .col h4{font-size:13px;margin:0 0 8px;color:var(--accent);}
+  .explain .col p{font-size:12.5px;color:var(--sub);line-height:1.8;margin:0 0 10px;}
+
+  footer{text-align:center;color:var(--sub);font-size:11px;margin-top:30px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>利率 & 汇率如何牵动股市 · 债市 · 黄金</h1>
+    <p>拖动下方滑块，模拟不同的利率 / 汇率情景，观察三大资产的联动反应（简化教学模型，非实盘预测）</p>
+  </header>
+
+  <div class="controls">
+    <div class="control-item">
+      <label>利率变动（基点，相对当前水平）<span class="val" id="rateVal">0 bp</span></label>
+      <input type="range" id="rateSlider" min="-200" max="200" step="25" value="0">
+      <div class="scale-labels"><span>大幅降息 -200bp</span><span>不变</span><span>大幅加息 +200bp</span></div>
+    </div>
+    <div class="control-item">
+      <label>本币汇率变动（相对一篮子货币）<span class="val" id="fxVal">0%</span></label>
+      <input type="range" id="fxSlider" min="-15" max="15" step="1" value="0">
+      <div class="scale-labels"><span>本币大幅贬值 -15%</span><span>不变</span><span>本币大幅升值 +15%</span></div>
+    </div>
+  </div>
+
+  <div class="presets">
+    <button data-r="100" data-f="3">🏦 加息周期（如2022美联储）</button>
+    <button data-r="-100" data-f="-3">💧 降息宽松</button>
+    <button data-r="0" data-f="-10">📉 本币大幅贬值（资本外流）</button>
+    <button data-r="0" data-f="10">📈 本币大幅升值</button>
+    <button data-r="150" data-f="8">🔥 加息+本币升值（紧缩组合）</button>
+    <button data-r="0" data-f="0">🔄 复位</button>
+  </div>
+
+  <div class="legend">
+    <span><span class="dot" style="background:var(--stock)"></span>股市</span>
+    <span><span class="dot" style="background:var(--bond)"></span>债市（价格，非收益率）</span>
+    <span><span class="dot" style="background:var(--gold)"></span>黄金</span>
+    <span><span class="dot" style="background:var(--up)"></span>上涨</span>
+    <span><span class="dot" style="background:var(--down)"></span>下跌</span>
+  </div>
+
+  <div class="cards">
+    <div class="card stock">
+      <h2><span class="icon">📊</span>股市</h2>
+      <div class="desc">对贴现率最敏感，利率上升压制估值</div>
+      <div class="gauge">
+        <span class="arrow" id="stockArrow">→</span>
+        <span class="magnitude" id="stockMag">0.0%</span>
+      </div>
+      <div class="bar-track"><div class="bar-fill" id="stockBar" style="width:0%;background:var(--sub);"></div></div>
+      <div class="logic">
+        <div class="chain" id="stockChain"></div>
+        <span id="stockText">利率与汇率不变，股市预期持平。</span>
+      </div>
+    </div>
+
+    <div class="card bond">
+      <h2><span class="icon">📜</span>债市（价格）</h2>
+      <div class="desc">利率与债券价格反向变动</div>
+      <div class="gauge">
+        <span class="arrow" id="bondArrow">→</span>
+        <span class="magnitude" id="bondMag">0.0%</span>
+      </div>
+      <div class="bar-track"><div class="bar-fill" id="bondBar" style="width:0%;background:var(--sub);"></div></div>
+      <div class="logic">
+        <div class="chain" id="bondChain"></div>
+        <span id="bondText">利率不变，债券价格持平。</span>
+      </div>
+    </div>
+
+    <div class="card gold">
+      <h2><span class="icon">🥇</span>黄金</h2>
+      <div class="desc">对实际利率与本币汇率双重敏感</div>
+      <div class="gauge">
+        <span class="arrow" id="goldArrow">→</span>
+        <span class="magnitude" id="goldMag">0.0%</span>
+      </div>
+      <div class="bar-track"><div class="bar-fill" id="goldBar" style="width:0%;background:var(--sub);"></div></div>
+      <div class="logic">
+        <div class="chain" id="goldChain"></div>
+        <span id="goldText">利率与汇率不变，金价持平。</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="explain">
+    <h3>传导机制说明</h3>
+    <div class="grid3">
+      <div class="col">
+        <h4>利率 → 股市</h4>
+        <p>利率上升 → 企业融资成本上升、未来现金流折现率上升 → 估值（尤其成长股）承压 → 股价倾向下跌。</p>
+        <p>利率下降则相反，宽松货币环境推升风险资产估值。</p>
+      </div>
+      <div class="col">
+        <h4>利率 → 债市</h4>
+        <p>债券价格与市场利率呈反向关系：利率上升，新发行债券收益率更高，存量低息债券价格下跌；利率下降则存量债券更具吸引力，价格上涨。</p>
+        <p>久期越长的债券，对利率变动越敏感。</p>
+      </div>
+      <div class="col">
+        <h4>利率 / 汇率 → 黄金</h4>
+        <p>黄金不产生利息，实际利率上升会提高持有黄金的机会成本，压制金价；反之降息提振金价。</p>
+        <p>黄金以美元计价，本币（如美元）升值使黄金对其他货币计价者变贵，通常压制金价；本币贬值则推升金价，两者叠加或对冲。</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>本页为简化教学演示模型，用于直观理解宏观变量与大类资产的一般传导方向，不构成投资建议，实际市场受多重因素共同影响。</footer>
+</div>
+
+<script>
+const rateSlider = document.getElementById('rateSlider');
+const fxSlider = document.getElementById('fxSlider');
+const rateVal = document.getElementById('rateVal');
+const fxVal = document.getElementById('fxVal');
+
+function setBar(id, pct){
+  const el = document.getElementById(id);
+  const capped = Math.max(-100, Math.min(100, pct));
+  const width = Math.abs(capped)/2; // half-track max
+  if(capped >= 0){
+    el.style.left = '50%';
+    el.style.width = width + '%';
+    el.style.background = 'var(--up)';
+  } else {
+    el.style.left = (50-width) + '%';
+    el.style.width = width + '%';
+    el.style.background = 'var(--down)';
+  }
+  if(Math.abs(capped) < 0.5){ el.style.background='var(--sub)'; }
+}
+
+function setCard(prefix, changePct, chainParts, text){
+  const arrow = document.getElementById(prefix+'Arrow');
+  const mag = document.getElementById(prefix+'Mag');
+  const chain = document.getElementById(prefix+'Chain');
+  const txt = document.getElementById(prefix+'Text');
+
+  const dir = changePct > 0.15 ? 'up' : (changePct < -0.15 ? 'down' : 'flat');
+  arrow.className = 'arrow ' + (dir==='flat' ? '' : dir);
+  arrow.textContent = dir==='up' ? '↑' : (dir==='down' ? '↓' : '→');
+  mag.className = 'magnitude ' + (dir==='flat' ? '' : dir);
+  mag.textContent = (changePct>=0?'+':'') + changePct.toFixed(1) + '%';
+
+  setBar(prefix+'Bar', changePct*8); // amplify for visibility on bar
+
+  chain.innerHTML = chainParts.map((p,i)=>{
+    const isLast = i===chainParts.length-1;
+    return '<span>'+p+'</span>' + (isLast?'':'<span class="op">→</span>');
+  }).join('');
+  txt.textContent = text;
+}
+
+function update(){
+  const rate = parseInt(rateSlider.value, 10); // bp
+  const fx = parseInt(fxSlider.value, 10);     // %
+
+  rateVal.textContent = (rate>0?'+':'') + rate + ' bp';
+  rateVal.className = 'val ' + (rate>0?'pos':(rate<0?'neg':''));
+  fxVal.textContent = (fx>0?'+':'') + fx + '%';
+  fxVal.className = 'val ' + (fx>0?'pos':(fx<0?'neg':''));
+
+  // ---- 股市：利率主导，负相关；汇率贬值对出口型股市有轻微正面，此处按综合估值效应简化 ----
+  const stockChange = (-rate/200)*6 + (-fx/15)*1.2;
+  setCard('stock', stockChange,
+    rate!==0
+      ? ['利率'+(rate>0?'↑':'↓'), '折现率'+(rate>0?'↑':'↓'), '估值'+(rate>0?'承压':'修复'), '股价'+(rate>0?'↓':'↑')]
+      : ['利率不变','估值中性','股价平稳'],
+    (rate===0 && fx===0)
+      ? '利率与汇率不变，股市预期持平。'
+      : `利率${rate>0?'上升':(rate<0?'下降':'不变')}使折现率${rate>0?'走高，压制成长股估值':(rate<0?'走低，提振估值':'保持稳定')}；汇率${fx>0?'升值可能拖累出口型企业盈利预期':(fx<0?'贬值对出口型企业盈利有一定支撑':'变化不大')}。`
+  );
+
+  // ---- 债市价格：与利率强烈反向 ----
+  const bondChange = (-rate/200)*8;
+  setCard('bond', bondChange,
+    rate!==0
+      ? ['利率'+(rate>0?'↑':'↓'), '新发债券收益率'+(rate>0?'更高':'更低'), '存量债券价格'+(rate>0?'↓':'↑')]
+      : ['利率不变','债券价格平稳'],
+    rate===0
+      ? '利率不变，债券价格持平。'
+      : `利率${rate>0?'上升':'下降'}，市场要求的到期收益率${rate>0?'提高':'降低'}，导致存量低息债券价格相应${rate>0?'下跌':'上涨'}，久期越长影响越大。`
+  );
+
+  // ---- 黄金：实际利率负相关 + 本币汇率负相关（美元计价逻辑），两者叠加 ----
+  const goldChange = (-rate/200)*5 + (-fx/15)*4;
+  setCard('gold', goldChange,
+    (rate===0 && fx===0)
+      ? ['利率/汇率不变','金价平稳']
+      : ['实际利率'+(rate>0?'↑':(rate<0?'↓':'平')), '本币'+(fx>0?'升值':(fx<0?'贬值':'平稳')), '持有黄金机会成本'+(rate>0?'↑':'↓'), '金价'+(goldChange>=0?'↑':'↓')],
+    (rate===0 && fx===0)
+      ? '利率与汇率不变，金价持平。'
+      : `${rate!==0?`利率${rate>0?'上升提高了持有无息资产黄金的机会成本，压制金价':'下降降低了机会成本，提振金价'}；`:''}${fx!==0?`本币${fx>0?'升值使以本币计价的黄金实际购买力效应偏空':'贬值通常对金价形成支撑'}。`:''}`
+  );
+}
+
+rateSlider.addEventListener('input', update);
+fxSlider.addEventListener('input', update);
+
+document.querySelectorAll('.presets button').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    rateSlider.value = btn.dataset.r;
+    fxSlider.value = btn.dataset.f;
+    update();
+  });
+});
+
+update();
+</script>
+</body>
+</html>
