@@ -1,5 +1,7 @@
 近三个月AI Hackathon的ideas
 
+https://github.com/JiaheWSX-thu/talent-trainer
+
 https://raw.githubusercontent.com/anthropics/claude-plugins-community/refs/heads/main/eli5/skills/eli5/SKILL.md
 
 ---
