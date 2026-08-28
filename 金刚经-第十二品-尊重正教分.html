@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>金刚般若波罗蜜经 · 第十二品·尊重正教分</title>
+  <style>
+    :root {
+      --ink: #171512;
+      --muted: #77716a;
+      --paper: #fdfcf9;
+      --teal: #278f83;
+      --vermilion: #d54a42;
+      --ochre: #ad750f;
+      --interpretation-ink: #39342e;
+      --interpretation-heading: #795f43;
+      --interpretation-paper: #eee8dc;
+      --rule: #e6e1d8;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 1080px; min-width: 1080px; background: var(--paper); }
+    body {
+      color: var(--ink);
+      font-family: "Noto Serif CJK SC", "Songti SC", "STSong", serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+    .sheet {
+      width: 1080px;
+      min-height: 100vh;
+      padding: 76px 82px 68px;
+      background: var(--paper);
+    }
+    .book {
+      margin: 0;
+      text-align: center;
+      font-size: 58px;
+      line-height: 1.3;
+      font-weight: 500;
+      letter-spacing: .18em;
+    }
+    .chapter {
+      margin: 13px 0 0;
+      text-align: center;
+      font-size: 52px;
+      line-height: 1.25;
+      font-weight: 650;
+      letter-spacing: .08em;
+    }
+    .title-rule {
+      width: 48px;
+      height: 3px;
+      margin: 31px auto 48px;
+      background: var(--vermilion);
+      border-radius: 3px;
+    }
+    .hero {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      margin: 0 0 66px;
+      overflow: hidden;
+      background: #ebe5da;
+      border-top: 1px solid #e1d9cc;
+      border-bottom: 1px solid #ded5c7;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 18%;
+      background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--paper) 54%, transparent));
+      pointer-events: none;
+    }
+    .hero-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: saturate(.78) contrast(.94) brightness(1.025);
+    }
+    .passage {
+      margin: 0 0 42px;
+      break-inside: avoid;
+    }
+    .annotated-line {
+      font-size: 0;
+      line-height: 1;
+      text-align: left;
+    }
+    .token-unit {
+      display: inline-flex;
+      max-width: 100%;
+      min-width: 2.4em;
+      margin: 0 14px 28px 0;
+      padding: 0 2px 9px;
+      flex-direction: column;
+      align-items: center;
+      vertical-align: top;
+      border-bottom: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+      page-break-inside: avoid;
+    }
+    .classic-run,
+    .classic-text,
+    .punctuation {
+      color: var(--ink);
+      font-size: 46px;
+      line-height: 1.24;
+      font-weight: 550;
+      letter-spacing: .035em;
+      white-space: nowrap;
+    }
+    .classic-run {
+      display: inline-flex;
+      align-items: baseline;
+    }
+    .punctuation {
+      display: inline;
+      margin: 0;
+      vertical-align: baseline;
+    }
+    .pinyin {
+      min-height: 19px;
+      margin: 0 0 3px;
+      color: var(--muted);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", "Noto Sans CJK SC", sans-serif;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: .04em;
+      white-space: nowrap;
+    }
+    .annotation {
+      max-width: 9.6em;
+      margin-top: 8px;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", "Noto Sans CJK SC", sans-serif;
+      font-size: 24px;
+      line-height: 1.48;
+      font-weight: 520;
+      letter-spacing: .015em;
+      text-align: center;
+      overflow-wrap: anywhere;
+    }
+    .tone-word { color: var(--teal); }
+    .tone-clause { color: var(--vermilion); }
+    .tone-variant { color: var(--ochre); }
+    .punctuation-break {
+      display: block;
+      width: 100%;
+    }
+    .interpretation {
+      margin: 70px -20px 0;
+      padding: 49px 48px 27px;
+      border-top: 1px solid #ddd3c3;
+      border-bottom: 1px solid #ddd3c3;
+      background: var(--interpretation-paper);
+      color: var(--interpretation-ink);
+    }
+    .interpretation h2 {
+      margin: 0 0 31px;
+      color: var(--interpretation-heading);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", "Noto Sans CJK SC", sans-serif;
+      font-size: 30px;
+      line-height: 1.3;
+      font-weight: 650;
+      letter-spacing: .12em;
+    }
+    .interpretation p {
+      margin: 0 0 20px;
+      font-size: 26px;
+      line-height: 1.96;
+      font-weight: 430;
+      letter-spacing: .018em;
+      text-align: justify;
+      text-justify: inter-ideograph;
+    }
+    .interpretation p:first-of-type {
+      color: #292621;
+      font-size: 28px;
+      line-height: 1.9;
+      font-weight: 500;
+    }
+    .interpretation p + p { text-indent: 2em; }
+    .source {
+      margin-top: 52px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", "Noto Sans CJK SC", sans-serif;
+      font-size: 20px;
+      line-height: 1.6;
+      letter-spacing: .02em;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <header>
+      <p class="book" data-book>金刚般若波罗蜜经</p>
+      <h1 class="chapter" data-chapter>第十二品·尊重正教分</h1>
+      <div class="title-rule" aria-hidden="true"></div>
+    </header>
+    
+    <article class="classic" aria-label="原文与注解">
+    <section class="passage" data-passage="1">
+      <div class="annotated-line"><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">复次</span><span class="punctuation" data-token="punctuation">，</span></span>
+    <span class="annotation">再者，接续上文另起一层</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">须菩提</span><span class="punctuation" data-token="punctuation">！</span></span>
+    <span class="annotation">佛十大弟子之一，解空第一</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">随</span></span>
+    <span class="annotation">随时随处</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">说</span></span>
+    <span class="annotation">讲说、宣说</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">是</span></span>
+    <span class="annotation">此，这部</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">经</span><span class="punctuation" data-token="punctuation">，</span></span>
+    <span class="annotation">指本经，金刚般若波罗蜜经</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">乃至</span></span>
+    <span class="annotation">甚至，哪怕仅仅</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">四句偈</span></span>
+    <span class="annotation">四句为一组的偈颂；此处泛指极少量经文</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">等</span><span class="punctuation" data-token="punctuation">，</span></span>
+    <span class="annotation">等等，表列举未尽</span>
+  </span><span class="token-unit tone-clause" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">当知</span></span>
+    <span class="annotation">应当知道——佛强调下文判断</span>
+  </span><span class="token-unit tone-clause" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">此处</span><span class="punctuation" data-token="punctuation">，</span></span>
+    <span class="annotation">说经之处；经文所到即成圣地</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">一切</span></span>
+    <span class="annotation">全部、所有</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">世间</span><span class="punctuation" data-token="punctuation">、</span></span>
+    <span class="annotation">人间众生所居之世界</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">天人</span><span class="punctuation" data-token="punctuation">、</span></span>
+    <span class="annotation">天道众生，六道之首</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">阿修罗</span><span class="punctuation" data-token="punctuation">，</span></span>
+    <span class="annotation">非天，好斗之神，六道众生之一</span>
+  </span><span class="token-unit tone-clause" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">皆应</span></span>
+    <span class="annotation">都应当——供养义务推及一切众生</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">供养</span><span class="punctuation" data-token="punctuation">，</span></span>
+    <span class="annotation">恭敬奉事，以香花饮食等表敬</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">如</span></span>
+    <span class="annotation">如同，像对待</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">佛塔庙</span><span class="punctuation" data-token="punctuation">，</span></span>
+    <span class="annotation">供奉佛舍利的塔与庙宇，最高礼敬处</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">何况</span></span>
+    <span class="annotation">更不用说，递进语气</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">有人</span></span>
+    <span class="annotation">若有人</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">尽能</span></span>
+    <span class="annotation">完全能够</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">受持</span></span>
+    <span class="annotation">领受于心并持守不失</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">读诵</span><span class="punctuation" data-token="punctuation">。</span></span>
+    <span class="annotation">对文读念与背诵</span>
+  </span></div>
+    </section>
+    <section class="passage" data-passage="2">
+      <div class="annotated-line"><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">须菩提</span><span class="punctuation" data-token="punctuation">！</span></span>
+    <span class="annotation">再次呼唤，引起注意</span>
+  </span><span class="token-unit tone-clause" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">当知</span></span>
+    <span class="annotation">应当了知——再次强化判断语气</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">是</span></span>
+    <span class="annotation">这个、此</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">人</span></span>
+    <span class="annotation">受持读诵之人</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">成就</span></span>
+    <span class="annotation">已经达成、圆满获得</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">最上第一</span></span>
+    <span class="annotation">至高无上，排在一切前面</span>
+  </span><span class="token-unit tone-variant" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">希有</span></span>
+    <span class="annotation">同「稀有」，极罕见；罗什译本用「希」，历来通行本保留</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">之</span></span>
+    <span class="annotation">结构助词，的</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">法</span><span class="punctuation" data-token="punctuation">，</span></span>
+    <span class="annotation">佛法，此处指般若智慧</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">若</span></span>
+    <span class="annotation">如果，假设</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">是</span></span>
+    <span class="annotation">这部</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">经典</span></span>
+    <span class="annotation">佛经典籍，指金刚经</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">所在</span></span>
+    <span class="annotation">存放、流布</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">之</span></span>
+    <span class="annotation">结构助词，的</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">处</span><span class="punctuation" data-token="punctuation">，</span></span>
+    <span class="annotation">地方</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">则</span></span>
+    <span class="annotation">就、便</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">为</span></span>
+    <span class="annotation">等同、算作</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">有</span></span>
+    <span class="annotation">存在</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">佛</span><span class="punctuation" data-token="punctuation">，</span></span>
+    <span class="annotation">觉者，佛陀</span>
+  </span><span class="token-unit tone-word" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">若</span></span>
+    <span class="annotation">以及；此处并列而非假设</span>
+  </span><span class="token-unit tone-clause" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">尊重</span></span>
+    <span class="annotation">佛所看重的——修饰弟子，指佛亲近器重之人</span>
+  </span><span class="token-unit tone-clause" data-token="annotated">
+    
+    <span class="classic-run"><span class="classic-text">弟子</span><span class="punctuation" data-token="punctuation">。</span></span>
+    <span class="annotation">佛的上首弟子；经在处如佛与大弟子同在</span>
+  </span></div>
+    </section>
+    </article>
+    <section class="interpretation" data-interpretation>
+      <h2>章节解读</h2>
+      <p>金刚经前面几品一直在拆：布施不住相、度众生不住我相、连佛法本身也不能当实有来执取。拆到第十一品「无为福胜分」，已经把恒河沙数七宝布施的功德放在了读诵受持之下。到了第十二品，佛忽然翻到另一面——哪怕只讲了四句偈，这块地方就该像佛塔一样被供养。</p>
+<p>这看起来矛盾。一边说法不能执、相不能住，一边又把经文所到之处抬到和佛塔并列的地位，让一切世间、天人、阿修罗全部来行礼。如果只按「一切有为法如梦幻泡影」的思路走下去，供养、圣地、尊重，每一个词都应该被拆掉才对。</p>
+<p>矛盾的入口在「随说是经，乃至四句偈等」这个条件上。佛没有说「把经书供在案上」就够了，他说的是「说」——有人在此处向另一个人讲说般若。讲说是一个动作：你必须用自己的理解重新组织经文，对面还有一个人在听。这不是保存文字，而是般若智慧在两个人之间运行了一次。四句偈是最低门槛——哪怕只运行了这么一小段，智慧已经发生过了。</p>
+<p>佛塔供养的是什么？塔里放的是舍利，代表佛的色身曾经在此修行、证悟、示现。信众礼敬佛塔，因为那里留下了觉悟发生过的痕迹。但色身已灭，痕迹不能再运行。佛在这里做了一个置换：讲说般若的地方，智慧不是痕迹，而是正在运行的事件。一个活的般若动作，比一座存放遗迹的塔更值得供养——「何况有人尽能受持读诵」，递进推到极处：那个完整领受并持守的人，身上承载的比塔庙更多。</p>
+<p>从「此处皆应供养」到「是人成就最上第一希有之法」，佛把圣性的来源从固定场所搬到了持经之人身上。地点本身不神圣，经文躺在那里也不神圣，只有当一个人用受持、读诵或讲说让般若流动起来，那个地方才等同于有佛、有佛看重的大弟子同在。这就是品名「尊重正教」的落点：尊重的不是载体，是载体里般若还在运行这件事。</p>
+<p>这条关系可以脱离佛教语境来检验。一本关于结构力学的教科书放在书架上，是纸和墨。一位工程师拿它的原理去设计一座桥，桥站住了——这本书在那座桥上「活了一次」。对于后来的学生来说，那座桥比图书馆里的藏本更能证明这些知识是真的。金刚经在做同样的事：般若的证明不在经卷本身，在它被一个人运行之后改变了什么。但佛说的「随说是经」预设了所说内容是般若正法。如果一个人随意发挥、偏离经义，讲说的动作仍然发生了，但般若并没有真正被运行。圣性绑定在「正教」上，不在「教」上。这恰恰解释了品名为什么叫「尊重正教分」而不是「尊重说法分」——限定词落在「正」上，它给前面所有的抬高加了一道不能绕过的前提。</p>
+    </section>
+    <footer class="source">底本｜鸠摩罗什译本通行本</footer>
+  </main>
+</body>
+</html>
