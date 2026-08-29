@@ -11,3 +11,5 @@ A Universe of Consciousness: How Matter Becomes Imagination
 Cognition, Brain, and Consciousness, Introduction to Cognitive Neuroscience 
 
 Looking for Spinoza, Joy, Sorrow, and the Feeling Brain 
+
+https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude
