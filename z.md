@@ -18,6 +18,8 @@ https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude
 
 AI Engineering Skills Map: Software engineering fundamentals
 
+Omarchy
+
 ## repos
 
 https://github.com/Forlives/21-day-self-interview
@@ -35,3 +37,5 @@ https://github.com/coolTheWorld/evolution-skills
 ## books
 
 The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime
+
+Tiny Experiments: How to Live Freely in a Goal-Obsessed World
