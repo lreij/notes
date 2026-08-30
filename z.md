@@ -16,6 +16,8 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude
 
+AI Engineering Skills Map: Software engineering fundamentals
+
 ## repos
 
 https://github.com/Forlives/21-day-self-interview
@@ -29,3 +31,7 @@ https://github.com/baranskyi/interrogation-partner
 https://github.com/justinhuangai/carl-jung-skill
 
 https://github.com/coolTheWorld/evolution-skills
+
+## books
+
+The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime
