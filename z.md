@@ -2,6 +2,8 @@
 
 On Intelligence: How a New Understanding of the Brain will Lead to the Creation of Truly Intelligent 
 
+Making Up the Mind: How the Brain Creates Our Mental World 
+
 Consciousness Explained, Daniel C. Dennett
 
 The Quest for Consciousness: A Neurobiological Approach
