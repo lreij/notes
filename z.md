@@ -14,17 +14,8 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## links
 
-https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude
-
-AI Engineering Skills Map: Software engineering fundamentals
-
-Omarchy
 
 ## repos
-
-https://github.com/Forlives/21-day-self-interview
-
-https://github.com/MetcalfSolutions/Satori
 
 https://github.com/Jackychen-12/life-designer
 
