@@ -1,4 +1,4 @@
-## what is intelligence?
+## intelligence
 
 On Intelligence: How a New Understanding of the Brain will Lead to the Creation of Truly Intelligent 
 
@@ -26,6 +26,8 @@ https://github.com/baranskyi/interrogation-partner
 https://github.com/justinhuangai/carl-jung-skill
 
 https://github.com/coolTheWorld/evolution-skills
+
+https://github.com/Imbad0202/academic-research-skills
 
 ## books
 
