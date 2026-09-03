@@ -27,8 +27,6 @@ https://github.com/justinhuangai/carl-jung-skill
 
 https://github.com/coolTheWorld/evolution-skills
 
-https://github.com/Imbad0202/academic-research-skills
-
 ## books
 
 The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime
