@@ -68,8 +68,6 @@ The Art of Spending Money: Simple Choices for a Richer Life
 
 Investing the Templeton Way: The Market-Beating Strategies of Value Investing's Legendary Bargain Hunter 
 
-The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime
-
 Secrets of the Millionaire Mind: Mastering the Inner Game of Wealth
 
 Horse Sense: The Key to Success is Finding a Horse to Ride
