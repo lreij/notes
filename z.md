@@ -16,6 +16,7 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## links
 
+https://www.theatlantic.com/ideas/2026/09/meditation-willoughby-britton-downsides/688474/
 
 ## repos
 
