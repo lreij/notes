@@ -34,3 +34,5 @@ The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime
 Tiny Experiments: How to Live Freely in a Goal-Obsessed World
 
 The Alchemy of Finance, Reading the Mind of the Market,  George Soros 
+
+Wealth Redistribution in Bubbles and Crashes
