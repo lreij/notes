@@ -32,6 +32,10 @@ https://github.com/coolTheWorld/evolution-skills
 
 ## books
 
+The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom
+
+Change: Principles of Problem Formation and Problem Resolution
+
 The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime
 
 Tiny Experiments: How to Live Freely in a Goal-Obsessed World
