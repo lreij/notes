@@ -16,7 +16,7 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## links
 
-## questions
+## prompts
 
 基于我们所有的聊天内容，请告诉我一个你认为我非常有必要知道，但大概率还不知道的知识。
 
