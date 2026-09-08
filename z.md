@@ -18,7 +18,7 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## prompts
 
-基于我们所有的聊天内容，请告诉我一个你认为我非常有必要知道，但大概率还不知道的知识。
+基于我们所有的聊天内容，请告诉我一个你认为我非常有必要知道，但大概率还不知道的认知。
 
 ## repos
 
@@ -38,11 +38,7 @@ Change: Principles of Problem Formation and Problem Resolution
 
 The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime
 
-Tiny Experiments: How to Live Freely in a Goal-Obsessed World
-
 The Alchemy of Finance, Reading the Mind of the Market,  George Soros 
-
-Wealth Redistribution in Bubbles and Crashes
 
 ACT Made Simple: An Easy-to-Read Primer on Acceptance and Commitment Therapy
 
