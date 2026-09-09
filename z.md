@@ -32,15 +32,15 @@ https://github.com/coolTheWorld/evolution-skills
 
 ## books
 
-The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom
+The Alchemy of Finance, Reading the Mind of the Market,  George Soros 
+
+ACT Made Simple: An Easy-to-Read Primer on Acceptance and Commitment Therapy
+
+Finite and Infinite Games: A Vision of Life as Play and Possibility
 
 Change: Principles of Problem Formation and Problem Resolution
 
 The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime
-
-The Alchemy of Finance, Reading the Mind of the Market,  George Soros 
-
-ACT Made Simple: An Easy-to-Read Primer on Acceptance and Commitment Therapy
 
 Reinforcements：How to Get People to Help You
 
@@ -53,8 +53,6 @@ Work, Consumerism and the New Poor
 Beschleunigung und Entfremdung: Entwurf einer Kritischen Theorie spätmoderner Zeitlichkeit
 
 How To Be An Existentialist：or How to Get Real，Get a Grip and Stop Making Excuses
-
-Finite and Infinite Games: A Vision of Life as Play and Possibility
 
 The Rational Optimist:How Prosperity Evolves
 
