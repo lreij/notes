@@ -16,7 +16,7 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## links
 
-https://waitbutwhy.com/
+
 
 ## prompts
 
@@ -61,6 +61,9 @@ The Rational Optimist:How Prosperity Evolves
 Superforecasting: The Art and Science of Prediction 
 
 Are Your Lights On?: How to Figure Out What the Problem REALLY Is
+
+The Gray Rhino: How to Recognize and Act on the Obvious Dangers We Ignore
+You Are What You Risk, The New Art and Science of Navigating an Uncertain World 
 
 The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness
 Same as Ever : A Guide to What Never Changes
