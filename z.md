@@ -40,8 +40,6 @@ ACT Made Simple: An Easy-to-Read Primer on Acceptance and Commitment Therapy
 
 Finite and Infinite Games: A Vision of Life as Play and Possibility
 
-Change: Principles of Problem Formation and Problem Resolution
-
 The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime
 
 Reinforcements：How to Get People to Help You
