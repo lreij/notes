@@ -36,6 +36,10 @@ https://github.com/coolTheWorld/evolution-skills
 
 ## books
 
+Transformative Experience, by Laurie Ann Paul
+
+Outline of a Theory of Practice, by Pierre Bourdieu
+
 The Alchemy of Finance, Reading the Mind of the Market,  George Soros 
 
 ACT Made Simple: An Easy-to-Read Primer on Acceptance and Commitment Therapy
