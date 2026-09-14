@@ -18,7 +18,9 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## links
 
+http://www.ahanjing.com/view/1/470/
 
+https://agama.buddhason.org/SA/SA0470.htm
 
 ## prompts
 
