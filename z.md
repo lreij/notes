@@ -36,6 +36,10 @@ https://github.com/coolTheWorld/evolution-skills
 
 ## books
 
+The Nature of Technology: What It Is and How It Evolves
+
+Just Keep Buying: Proven Ways to Save Money and Build Your Wealth
+
 The Alchemy of Finance, Reading the Mind of the Market,  George Soros 
 
 ACT Made Simple: An Easy-to-Read Primer on Acceptance and Commitment Therapy
