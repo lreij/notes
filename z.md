@@ -18,7 +18,7 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## links
 
-
+https://www.aymannadeem.com/artificial/intelligence,/developer/tools/2026/09/24/plan-mode-is-dead.html
 
 ## prompts
 
