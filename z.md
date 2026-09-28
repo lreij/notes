@@ -18,11 +18,15 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## links
 
-https://www.aymannadeem.com/artificial/intelligence,/developer/tools/2026/09/24/plan-mode-is-dead.html
+
 
 ## prompts
 
 基于我们所有的聊天内容，请告诉我一个你认为我非常有必要知道，但大概率还不知道的认知。
+
+## notes
+
+从 Homo sapiens 出现（约30万年前）到现在，曾经出生过的人类总数大约在 1000亿～1200亿之间。在这样的背景下，人没什么特别的。
 
 ## repos
 
