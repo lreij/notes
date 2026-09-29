@@ -26,7 +26,7 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## notes
 
-从 Homo sapiens 出现（约30万年前）到现在，曾经出生过的人类总数大约在 1000亿～1200亿之间。在这样的背景下，没有谁是特别的，也没有谁是重要的。
+
 
 ## repos
 
