@@ -30,19 +30,10 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## repos
 
-https://github.com/Jackychen-12/life-designer
-
-https://github.com/baranskyi/interrogation-partner
-
-https://github.com/justinhuangai/carl-jung-skill
-
-https://github.com/coolTheWorld/evolution-skills
 
 ## books
 
 The Nature of Technology: What It Is and How It Evolves
-
-The Alchemy of Finance, Reading the Mind of the Market,  George Soros 
 
 ACT Made Simple: An Easy-to-Read Primer on Acceptance and Commitment Therapy
 
@@ -69,10 +60,13 @@ Superforecasting: The Art and Science of Prediction
 Are Your Lights On?: How to Figure Out What the Problem REALLY Is
 
 The Gray Rhino: How to Recognize and Act on the Obvious Dangers We Ignore
+
 You Are What You Risk, The New Art and Science of Navigating an Uncertain World 
 
 The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness
+
 Same as Ever : A Guide to What Never Changes
+
 The Art of Spending Money: Simple Choices for a Richer Life
 
 Investing the Templeton Way: The Market-Beating Strategies of Value Investing's Legendary Bargain Hunter 
@@ -82,6 +76,7 @@ Secrets of the Millionaire Mind: Mastering the Inner Game of Wealth
 Horse Sense: The Key to Success is Finding a Horse to Ride
 
 The Surrender Experiment: My Journey into Life’s Perfection
+
 The Untethered Soul: The Journey Beyond Yourself
 
 The Power of Now
