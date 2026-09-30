@@ -40,11 +40,7 @@ https://github.com/coolTheWorld/evolution-skills
 
 ## books
 
-Adversity Quotient, Turning Obstacles into Opportunities
-
 The Nature of Technology: What It Is and How It Evolves
-
-Just Keep Buying: Proven Ways to Save Money and Build Your Wealth
 
 The Alchemy of Finance, Reading the Mind of the Market,  George Soros 
 
