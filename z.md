@@ -33,9 +33,11 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## books
 
-The Nature of Technology: What It Is and How It Evolves
+The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness
 
-ACT Made Simple: An Easy-to-Read Primer on Acceptance and Commitment Therapy
+Same as Ever : A Guide to What Never Changes
+
+The Art of Spending Money: Simple Choices for a Richer Life
 
 Finite and Infinite Games: A Vision of Life as Play and Possibility
 
@@ -62,12 +64,6 @@ Are Your Lights On?: How to Figure Out What the Problem REALLY Is
 The Gray Rhino: How to Recognize and Act on the Obvious Dangers We Ignore
 
 You Are What You Risk, The New Art and Science of Navigating an Uncertain World 
-
-The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness
-
-Same as Ever : A Guide to What Never Changes
-
-The Art of Spending Money: Simple Choices for a Richer Life
 
 Investing the Templeton Way: The Market-Beating Strategies of Value Investing's Legendary Bargain Hunter 
 
