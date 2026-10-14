@@ -33,12 +33,6 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## books
 
-The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness
-
-Same as Ever : A Guide to What Never Changes
-
-The Art of Spending Money: Simple Choices for a Richer Life
-
 Finite and Infinite Games: A Vision of Life as Play and Possibility
 
 The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime
