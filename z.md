@@ -33,10 +33,6 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## books
 
-Finite and Infinite Games: A Vision of Life as Play and Possibility
-
-The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime
-
 Reinforcements：How to Get People to Help You
 
 Influence: The Psychology of Persuasion
