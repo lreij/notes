@@ -41,6 +41,10 @@ Under Saturn's Shadow: The Wounding and Healing of Men
 
 Creating a Life: Finding Your Individual Path
 
+The Fabric of Reality: The Science of Parallel Universes - and Its Implications
+
+The Beginning of Infinity: Explanations That Transform the World
+
 Influence: The Psychology of Persuasion
 
 Never Split the Difference: Negotiating As If Your Life Depended On It
