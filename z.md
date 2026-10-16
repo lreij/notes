@@ -49,11 +49,7 @@ Work, Consumerism and the New Poor
 
 Beschleunigung und Entfremdung: Entwurf einer Kritischen Theorie spätmoderner Zeitlichkeit
 
-How To Be An Existentialist：or How to Get Real，Get a Grip and Stop Making Excuses
-
 The Rational Optimist:How Prosperity Evolves
-
-Superforecasting: The Art and Science of Prediction 
 
 Are Your Lights On?: How to Figure Out What the Problem REALLY Is
 
@@ -66,11 +62,3 @@ Investing the Templeton Way: The Market-Beating Strategies of Value Investing's 
 Secrets of the Millionaire Mind: Mastering the Inner Game of Wealth
 
 Horse Sense: The Key to Success is Finding a Horse to Ride
-
-The Surrender Experiment: My Journey into Life’s Perfection
-
-The Untethered Soul: The Journey Beyond Yourself
-
-The Power of Now
-
-The Seven Spiritual Laws of Success: A Practical Guide to the Fulfillment of Your Dreams 
