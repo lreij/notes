@@ -33,6 +33,14 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## books
 
+The Middle Passage: From Misery to Meaning in Midlife
+
+Swamplands of the Soul: New Life in Dismal Places
+
+Under Saturn's Shadow: The Wounding and Healing of Men
+
+Creating a Life: Finding Your Individual Path
+
 Reinforcements：How to Get People to Help You
 
 Influence: The Psychology of Persuasion
