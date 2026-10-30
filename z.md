@@ -16,11 +16,10 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## links
 
-
+https://www.seangoedecke.com/
 
 ## prompts
 
-基于我们所有的聊天内容，请告诉我一个你认为我非常有必要知道，但大概率还不知道的认知。
 
 ## notes
 
@@ -35,17 +34,7 @@ The Fabric of Reality: The Science of Parallel Universes - and Its Implications
 
 The Beginning of Infinity: Explanations That Transform the World
 
-Influence: The Psychology of Persuasion
-
-Never Split the Difference: Negotiating As If Your Life Depended On It
-
 Work, Consumerism and the New Poor
-
-Beschleunigung und Entfremdung: Entwurf einer Kritischen Theorie spätmoderner Zeitlichkeit
-
-The Rational Optimist:How Prosperity Evolves
-
-Are Your Lights On?: How to Figure Out What the Problem REALLY Is
 
 The Gray Rhino: How to Recognize and Act on the Obvious Dangers We Ignore
 
