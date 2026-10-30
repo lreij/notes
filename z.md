@@ -1,7 +1,5 @@
 ## intelligence
 
-On Intelligence: How a New Understanding of the Brain will Lead to the Creation of Truly Intelligent 
-
 Superintelligence : Paths, Dangers, Strategies
 
 Making Up the Mind: How the Brain Creates Our Mental World 
