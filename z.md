@@ -30,6 +30,8 @@ https://www.seangoedecke.com/
 
 ## books
 
+How Not To Invest: The ideas, numbers, and behaviors that destroy wealth - and how to avoid them 
+
 The Fabric of Reality: The Science of Parallel Universes - and Its Implications
 
 The Beginning of Infinity: Explanations That Transform the World
