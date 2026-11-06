@@ -30,8 +30,6 @@ https://www.seangoedecke.com/
 
 ## books
 
-You Are What You Risk, The New Art and Science of Navigating an Uncertain World 
-
 Investing the Templeton Way: The Market-Beating Strategies of Value Investing's Legendary Bargain Hunter 
 
 Secrets of the Millionaire Mind: Mastering the Inner Game of Wealth
