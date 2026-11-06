@@ -16,7 +16,7 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## links
 
-https://www.seangoedecke.com/
+
 
 ## prompts
 
@@ -30,8 +30,3 @@ https://www.seangoedecke.com/
 
 ## books
 
-Investing the Templeton Way: The Market-Beating Strategies of Value Investing's Legendary Bargain Hunter 
-
-Secrets of the Millionaire Mind: Mastering the Inner Game of Wealth
-
-Horse Sense: The Key to Success is Finding a Horse to Ride
