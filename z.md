@@ -30,14 +30,6 @@ https://www.seangoedecke.com/
 
 ## books
 
-The Fabric of Reality: The Science of Parallel Universes - and Its Implications
-
-The Beginning of Infinity: Explanations That Transform the World
-
-Work, Consumerism and the New Poor
-
-The Gray Rhino: How to Recognize and Act on the Obvious Dangers We Ignore
-
 You Are What You Risk, The New Art and Science of Navigating an Uncertain World 
 
 Investing the Templeton Way: The Market-Beating Strategies of Value Investing's Legendary Bargain Hunter 
