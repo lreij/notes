@@ -16,7 +16,9 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## links
 
+https://pshares.org/blog/a-carrier-bag-theory-of-revolution/
 
+https://git.xpub.nl/XPUB/carrier-bag-markers/raw/commit/5b1fe7e1bf72f4ae69a33ce7274ae0e723919ba6/carrier-bag.pdf
 
 ## prompts
 
