@@ -22,11 +22,12 @@ https://git.xpub.nl/XPUB/carrier-bag-markers/raw/commit/5b1fe7e1bf72f4ae69a33ce7
 
 https://zou-group.github.io/llm-claims-shelf-life/
 
+https://github.com/elvarofficial/teardown
+
 ## prompts
 
 
 ## notes
-
 
 
 ## repos
