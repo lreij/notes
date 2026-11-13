@@ -16,7 +16,6 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## links
 
-https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md
 
 ## prompts
 
