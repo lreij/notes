@@ -19,6 +19,7 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## prompts
 
+这个领域的顶尖专业人士会做什么？他们会从哪些最原始的材料起步？他们会用什么具体的方法和工具？
 
 ## notes
 
