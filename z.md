@@ -23,10 +23,10 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## notes
 
-Pascual Restrepo 《We Won't be Missed: Work and Growth in the AGI World》
 
 ## repos
 
 
 ## books
 
+Mastery by Robert Greene
