@@ -30,3 +30,5 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 ## books
 
 Mastery by Robert Greene
+
+Liquid Modernity by Zygmunt Bauman
