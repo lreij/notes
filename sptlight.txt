@@ -1,0 +1,29 @@
+ Spotlight 的索引放在每个卷根目录下的隐藏文件夹 .Spotlight-V100 里，用 du 就能看到它的大小。
+
+  系统盘（Catalina 及以后）
+
+  sudo du -sh /System/Volumes/Data/.Spotlight-V100
+
+  Mojave 及更早的系统，索引在根目录：
+
+  sudo du -sh /.Spotlight-V100
+
+  外接盘或其他卷
+
+  sudo du -sh /Volumes/*/.Spotlight-V100 2>/dev/null
+
+  App 自己的 Spotlight 索引
+
+  邮件、备忘录、信息等 App 通过 CoreSpotlight 建的索引放在用户目录下，有时也挺大：
+
+  du -sh ~/Library/Metadata/CoreSpotlight
+
+  如果报 "Operation not permitted"
+
+  这是 macOS 的隐私保护拦住了，sudo 也绕不过去。解决办法是：
+
+  1. 打开「系统设置」→「隐私与安全性」→「完全磁盘访问权限」。
+  2. 把「终端」（或你用的 iTerm 等）加进去并打开开关。
+  3. 重启终端，再运行上面的命令。
+
+  一般索引有几百 MB 到几 GB。如果大得离谱（比如十几 GB 以上），通常是索引损坏或膨胀了，用 sudo mdutil -E /System/Volumes/Data 重建一次就能明显变小。
