@@ -23,6 +23,7 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 ## notes
 
+testcase_measurement_configuration
 
 ## repos
 
