@@ -25,6 +25,8 @@ Looking for Spinoza, Joy, Sorrow, and the Feeling Brain
 
 testcase_measurement_configuration
 
+无以生灭心行说实相法。诸法毕竟不生不灭。是无常义。五受阴洞达空无所起。是苦义。诸法究竟无所有。是空义。于我无我而不二。是无我义。法本不然今则无灭。是寂灭义。
+
 ## repos
 
 
